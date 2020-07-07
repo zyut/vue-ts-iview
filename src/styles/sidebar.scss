@@ -1,0 +1,28 @@
+#app {
+  .main-container {
+    position: relative;
+    min-height: 100%;
+    margin-left: $sideBarWidth;
+  }
+  .sidebar-container {
+    position: fixed;
+    width: $sideBarWidth !important;
+    background-color: $menuBg;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    font-size: 0;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .ivu-menu {
+      border: none !important;
+      width: 100% !important;
+      height: 100%;
+      background-color: $menuBg;
+    }
+  }
+}

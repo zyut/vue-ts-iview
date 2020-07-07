@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
-import Home from '../views/Home.vue';
+import Layout from '@/layout/index.vue';
 
 Vue.use(VueRouter);
 
@@ -8,7 +8,13 @@ const routes: RouteConfig[] = [
   {
     path: '/',
     name: 'Home',
-    component: Home,
+    component: Layout,
+    children: [
+      {
+        path: '',
+        component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+      }
+    ]
   },
   {
     path: '/about',
