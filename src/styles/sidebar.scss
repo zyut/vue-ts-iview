@@ -1,0 +1,40 @@
+#app {
+  .main-container {
+    position: relative;
+    min-height: 100%;
+    margin-left: $sideBarWidth;
+  }
+  .sidebar-container {
+    position: fixed;
+    width: $sideBarWidth !important;
+    background-color: $menuBg;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1001;
+    overflow-y: auto;
+    /* sidebar滚动条 */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .ivu-menu {
+      border: none;
+      width: 100% !important;
+      background-color: $menuBg;
+
+      .ivu-menu-title {
+        color: $menuText;
+      }
+      .ivu-menu-item-active:not(.ivu-menu-submenu), .ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu-title-active:not(.ivu-menu-submenu) {
+        color: $menuActiveText;
+        background-color: rgba(0,0,0,0);
+      }
+      .ivu-menu-submenu .ivu-menu-item-active, .ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu .ivu-menu-item-active:hover {
+        color: $menuActiveText;
+        background-color: rgba(0,0,0,0) !important;
+      }
+    }
+  }
+}
