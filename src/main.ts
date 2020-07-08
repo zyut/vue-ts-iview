@@ -8,6 +8,10 @@ import 'normalize.css';
 import '@/styles/index.scss';
 
 Vue.use(ViewUI);
+Vue.use(ViewUI, {
+  size: 'medium', // set element-ui default size
+})
+
 
 Vue.config.productionTip = false;
 

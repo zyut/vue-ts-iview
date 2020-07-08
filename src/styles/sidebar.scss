@@ -12,20 +12,14 @@
     top: 0;
     left: 0;
     bottom: 0;
-<<<<<<< HEAD
     z-index: 1001;
-    overflow-y: auto;
-    /* sidebar滚动条 */
-=======
     font-size: 0;
     overflow-y: auto;
->>>>>>> 5dff251fb9ac173b3338d56433cefb8a5f89a9e0
     &::-webkit-scrollbar {
       display: none;
     }
 
     .ivu-menu {
-<<<<<<< HEAD
       border: none;
       width: 100% !important;
       background-color: $menuBg;
@@ -41,12 +35,6 @@
         color: $menuActiveText;
         background-color: rgba(0,0,0,0) !important;
       }
-=======
-      border: none !important;
-      width: 100% !important;
-      height: 100%;
-      background-color: $menuBg;
->>>>>>> 5dff251fb9ac173b3338d56433cefb8a5f89a9e0
     }
   }
 }
